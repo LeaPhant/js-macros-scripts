@@ -1,7 +1,9 @@
 ## Treecap HUD
 Overlay for SkyBlock Treecap / Jungle Axe cooldown
 
-*(Cooldown defined for Monkey Pet)*
+Currently only works in solo lobbies as that's what I mainly use it for, it **will** pick up other people's treecap proccing.
+
+*(Cooldowns are defined for Legendary Monkey Pet)*
 
 ### Files 
 - [`setproctime.js`](treecap-hud/setproctime.js) (Run on `BlockUpdate` event)
