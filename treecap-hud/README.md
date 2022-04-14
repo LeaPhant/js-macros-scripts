@@ -7,6 +7,10 @@ Overlay for SkyBlock Treecap / Jungle Axe cooldown
 - [`setproctime.js`](treecap-hud/setproctime.js) (Run on `BlockUpdate` event)
 - [`hud.js`](treecap-hud/hud.js) (Run on `Tick` event)
 
-### Screenshot
+### Video
 
-![image](https://user-images.githubusercontent.com/14080165/163297340-17803d02-8e20-4c57-b7e8-cfab1def1b38.png)
+https://user-images.githubusercontent.com/14080165/163297869-138ea579-84a5-426f-a7e3-689fb8bc690d.mp4
+
+
+
+
