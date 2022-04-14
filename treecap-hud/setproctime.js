@@ -3,9 +3,20 @@ const lastBreak = GlobalVars.getDouble('LAST_LOG_BREAK') || 0;
 const currentBreak = Time.time();
 
 if(event.block.getName() == 'Air' && event.updateType == 'STATE') {
-    if (currentBreak - lastBreak < 50 && currentBreak - lastProc > 2000 / 1.5) {
-        GlobalVars.putDouble('LAST_PROC', currentBreak);
-    }
+    const inv = Player.openInventory();
+    const heldItem = inv.getSlot(inv.getSelectedHotbarSlotIndex() + 36);
+    const treeCapHeld =
+        heldItem != null
+        && (
+            heldItem.getName().includes('Treecapitator')
+            || heldItem.getName().includes('Jungle Axe')
+        );
 
-    GlobalVars.putDouble('LAST_LOG_BREAK', currentBreak);
+    if (treeCapHeld) {
+        if (currentBreak - lastBreak < 50 && currentBreak - lastProc > 2000 / 1.5) {
+            GlobalVars.putDouble('LAST_PROC', currentBreak);
+        }
+
+        GlobalVars.putDouble('LAST_LOG_BREAK', currentBreak);
+    }
 }
