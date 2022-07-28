@@ -20,7 +20,9 @@ const throttled = GlobalVars.getBoolean('IS_THROTTLED');
 try {
     const inv = Player.openInventory();
     const heldItem = inv.getSlot(inv.getSelectedHotbarSlotIndex() + 36);
-    const toolHeld = FARMING_TOOLS.find(a => heldItem.getName().includes(a));
+    const heldName = heldItem.getName().getString();
+    
+    const toolHeld = FARMING_TOOLS.find(a => heldName.includes(a));
     
     if (!throttled && (time - lastRegrow) > LAG_TIMEOUT && toolHeld) {
         const builder = Chat.createTextBuilder();
