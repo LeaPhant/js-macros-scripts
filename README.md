@@ -2,7 +2,7 @@
 Here I'm sharing some scripts i use with JsMacros to make things nicer or track stats, usually in Hypixel SkyBlock.
 
 ### How to use
-- Download & Install JsMacros for your version [here](https://www.curseforge.com/minecraft/mc-mods/jsmacros/files/all). *(1.8 up to 1.18 with either Forge or Fabric supported)*
+- Download & Install JsMacros for your version [here](https://modrinth.com/mod/jsmacros/versions). *(1.8.9 up to 1.19 with either Forge or Fabric supported)*
 - Set the hotkey to open JsMacros GUI in Controls
 
 ![image](https://user-images.githubusercontent.com/14080165/163298786-e400e914-6537-4f50-a04e-23070738bd12.png)
